@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aidan Conner Rahill — Computer Science Student</title>
+<meta name="description" content="Personal website of Aidan Conner Rahill, Computer Science student at Syracuse University.">
+<style>
+:root{--ink:#16202b;--muted:#52606d;--accent:#0b5fff;--bg:#f7f8fa;--card:#fff;--line:#dfe3e8}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
+header{background:#101820;color:#fff;padding:1rem 0;position:sticky;top:0}
+.wrap{max-width:900px;margin:0 auto;padding:0 1.25rem}
+nav{display:flex;flex-wrap:wrap;gap:1rem;align-items:center;justify-content:space-between}
+nav strong{font-size:1.1rem}
+nav a{color:#fff;text-decoration:none;margin-left:1rem}
+nav a:hover{text-decoration:underline}
+.hero{padding:3rem 0 2rem}
+.hero h1{font-size:2.4rem;line-height:1.15;margin:.2rem 0}
+.hero p.lede{font-size:1.15rem;color:var(--muted)}
+.btn{display:inline-block;background:var(--accent);color:#fff;padding:.6rem 1rem;border-radius:.5rem;text-decoration:none;margin:.25rem .5rem .25rem 0}
+.btn.secondary{background:#fff;color:var(--accent);border:1px solid var(--accent)}
+section{padding:1.5rem 0}
+h2{border-bottom:2px solid var(--line);padding-bottom:.4rem}
+.card{background:var(--card);border:1px solid var(--line);border-radius:.75rem;padding:1.25rem;margin:1rem 0}
+.card h3{margin-top:0}
+.meta{color:var(--muted);font-size:.95rem}
+ul{padding-left:1.25rem}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem}
+footer{background:#101820;color:#d7dee5;padding:1.5rem 0;margin-top:2rem}
+footer a{color:#fff}
+a{color:var(--accent)}
+</style>
+</head>
+<body>
+<header>
+<div class="wrap"><nav><strong>Aidan Conner Rahill</strong><div><a href="#about">About</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#contact">Contact</a></div></nav></div>
+</header>
+<main class="wrap">
+<section class="hero" id="about">
+<p class="meta">Computer Science &middot; Syracuse University</p>
+<h1>Aidan Conner Rahill</h1>
+<p class="lede">Computer Science student at Syracuse University, College of Engineering and Computer Science. B.S. in Computer Science, anticipated December 2027.</p>
+<p><a class="btn" href="Aidan_C_Rahill_resume.pdf">View my resume (PDF)</a><a class="btn secondary" href="https://www.linkedin.com/in/aidancrahill/">LinkedIn</a><a class="btn secondary" href="mailto:aidancrahill@gmail.com">Email me</a></p>
+</section>
+<section id="education">
+<h2>Education</h2>
+<div class="card">
+<h3>Syracuse University — College of Engineering and Computer Science</h3>
+<p class="meta">B.S. in Computer Science &middot; Anticipated December 2027</p>
+<p>Computer Science student at Syracuse University.</p>
+</div>
+</section>
+<section id="projects">
+<h2>Projects</h2>
+<article class="card">
+<h3>Box Art: Puzzle Game &amp; Optimal Level Solver</h3>
+<p class="meta">February 2026 &ndash; Present</p>
+<ul>
+<li>Built the game in Godot 4 using signal-driven managers, quaternion-based cube rotation with slerp-animated, drag-controlled rolls, and stack-based undo/reset history.</li>
+<li>Designed a solver for finding the minimum number of moves for any level, using A* search over cube orientation (a 24-element rotation group), paint, and goal state, guided by an admissible tour-based heuristic.</li>
+<li>Rewrote the Python prototype in C with precomputed shortest-path tables between key tiles, cutting solve time from ~2000 ms to 7 ms per level on average.</li>
+<li>Verified optimality against a brute-force search on 4,000+ random levels, then generated a 1,000-level library across 3 board sizes and 7 difficulty tiers.</li>
+</ul>
+<p><a href="projects/box-art.html">View project &mdash; Coming Soon</a></p>
+</article>
+<article class="card">
+<h3>La Posada de Mindo: Hotel Website &amp; Booking Service</h3>
+<p class="meta">August 2026 &ndash; October 2026</p>
+<ul>
+<li>Reworked an outdated website from the ground up, updating old website functionalities while adding new utilities to create a full management system with direct online booking, room availability viewing, and an administrator page.</li>
+<li>Increased website traffic and reduced operating costs by eliminating booking cuts taken by third-party websites.</li>
+</ul>
+<p><a href="projects/la-posada-de-mindo.html">View project &mdash; Coming Soon</a></p>
+</article>
+</section>
+<section id="experience">
+<h2>Experience</h2>
+<div class="card">
+<h3>Web Developer</h3>
+<p class="meta">New York, New York &middot; May 2026 &ndash; Present</p>
+<ul>
+<li>Partnered with a local printing company to expand services into websites.</li>
+<li>Designed front and back end sites for clients solo by commission, with weekly updates.</li>
+<li>Worked with clients in English and Spanish in the US and South America.</li>
+<li>Reworked the company&rsquo;s own website for online orders and invoices.</li>
+</ul>
+</div>
+</section>
+<section id="skills">
+<h2>Skills</h2>
+<div class="skills">
+<div class="card"><h3>Languages</h3><p>C, C#, Python, Java, Racket, Haskell, x86 Assembly, Bash, GDScript</p></div>
+<div class="card"><h3>Computer Science</h3><p>Data structures and algorithms; systems and network programming (processes, sockets); computer architecture (caching, virtual memory); software design (UML, design patterns); natural language processing</p></div>
+<div class="card"><h3>Tools</h3><p>Linux, Git, Godot, WordPress</p></div>
+<div class="card"><h3>Human Languages</h3><p>English, Spanish (C1 / Working Professional)</p></div>
+</div>
+</section>
+<section id="contact">
+<h2>Contact</h2>
+<div class="card">
+<p>Email: <a href="mailto:aidancrahill@gmail.com">aidancrahill@gmail.com</a><br>Phone: <a href="tel:+14244164391">+1 (424) 416-4391</a><br>LinkedIn: <a href="https://www.linkedin.com/in/aidancrahill/">linkedin.com/in/aidancrahill</a><br>GitHub: <a href="https://github.com/aidanrahill">github.com/aidanrahill</a><br>Resume: <a href="Aidan_C_Rahill_resume.pdf">Aidan_C_Rahill_resume.pdf</a></p>
+</div>
+</section>
+</main>
+<footer><div class="wrap"><p>&copy; Aidan Conner Rahill &middot; <a href="Aidan_C_Rahill_resume.pdf">Resume</a> &middot; <a href="https://www.linkedin.com/in/aidancrahill/">LinkedIn</a></p></div></footer>
+</body>
+</html>
