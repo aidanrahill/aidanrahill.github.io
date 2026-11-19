@@ -16,10 +16,12 @@ nav{display:flex;flex-wrap:wrap;gap:1rem;align-items:center;justify-content:spac
 nav strong{font-size:1.1rem}
 nav a{color:#fff;text-decoration:none;margin-left:1rem}
 nav a:hover{text-decoration:underline}
-.hero{padding:3.5rem 2rem 2.5rem;margin-top:1.5rem;border-radius:1rem;color:#fff;background:#101820;background-image:linear-gradient(rgba(7,12,18,.80),rgba(7,12,18,.80)),url("heading-bg.jpg");background-size:cover;background-position:center;background-repeat:no-repeat}
-.hero h1{font-size:2.4rem;line-height:1.15;margin:.2rem 0}
+.hero{display:flex;align-items:center;justify-content:space-between;gap:2rem;padding:3.5rem 2rem 2.5rem;margin-top:1.5rem;border-radius:1rem;color:#fff;background:#101820;background-image:linear-gradient(rgba(7,12,18,.80),rgba(7,12,18,.80)),url("heading-bg.jpg");background-size:cover;background-position:center;background-repeat:no-repeat}
+.hero h1{font-size:2.4rem;line-height:1.15;margin:0 0 .2rem}
 .hero p.lede{font-size:1.15rem;color:#dbe4ee}
-  .hero .meta{color:#cbd5e1}
+.hero-text{flex:1;min-width:0}
+.hero-photo{width:180px;height:180px;border-radius:50%;object-fit:cover;flex-shrink:0;border:3px solid rgba(255,255,255,.85)}
+@media (max-width:640px){.hero-photo{width:120px;height:120px}.hero{gap:1rem}}
 .btn{display:inline-block;background:var(--accent);color:#fff;padding:.6rem 1rem;border-radius:.5rem;text-decoration:none;margin:.25rem .5rem .25rem 0}
 .btn.secondary{background:#fff;color:var(--accent);border:1px solid var(--accent)}
 section{padding:1.5rem 0;scroll-margin-top:80px}
@@ -40,10 +42,12 @@ a{color:var(--accent)}
 </header>
 <main class="wrap">
 <section class="hero" id="about">
-<p class="meta">Computer Science &middot; Syracuse University</p>
+<div class="hero-text">
 <h1>Aidan Conner Rahill</h1>
 <p class="lede">Computer Science student at Syracuse University, College of Engineering and Computer Science. B.S. in Computer Science, anticipated December 2027.</p>
 <p><a class="btn" href="Aidan_C_Rahill_resume.pdf">View my resume (PDF)</a><a class="btn secondary" href="https://www.linkedin.com/in/aidancrahill/">LinkedIn</a><a class="btn secondary" href="mailto:aidancrahill@gmail.com">Email me</a></p>
+</div>
+<img class="hero-photo" src="headshot.png" alt="Professional headshot of Aidan Conner Rahill">
 </section>
 <section id="education">
 <h2>Education</h2>
